@@ -23,7 +23,7 @@
     "gulp-rename": "1.4.0",
     "gulp-uglify": "3.0.2"
   },
-  "homepage": "https://darekkay.com/dev/",
+  "homepage": "https://dev-tools-lemon.vercel.app",
   "license": "MIT",
   "repository": {
     "type": "git",
