@@ -1,153 +1,860 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/base.min.css">
-  <title>Developer Tools</title>
-  <style>
-    html,
-    body {
-      height: 100%;
-    }
-
-    body {
-      display: flex;
-      flex-direction: column;
-    }
-
-    main {
-      flex: 1 0 auto;
-      width: 100%;
-      max-width: 800px;
-      margin: 5rem auto;
-      padding: 0 2.5rem;
-    }
-
-    header,
-    footer {
-      flex: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 4rem 1rem;
-    }
-
-    .inverted {
-      background: #233c51;
-      color: #fff;
-    }
-
-    .inverted a,
-    .inverted a:hover,
-    .inverted a:visited {
-      color: #face00;
-    }
-
-    h1 {
-      margin: 0;
-      padding: 0;
-      border: none;
-    }
-
-    footer {
-      flex-direction: column;
-      font-size: 1.6rem;
-    }
-
-    footer > * {
-      margin: 0.6rem;
-    }
-
-    .github {
-      display: flex;
-      align-items: center;
-    }
-
-    .icon {
-      height: 2rem;
-      width: 2rem;
-    }
-
-    .icon-right {
-      margin-left: 0.5rem;
-    }
-
-    .projects {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-
-    .project {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      list-style: none;
-      margin: 1rem 1rem 3.5rem;
-      text-align: center;
-      width: 100%;
-    }
-
-    .project,
-    .project-description {
-      max-width: 335px;
-    }
-
-    .project img {
-      border: 1px solid #dcdee0;
-      border-radius: 3px;
-      margin-bottom: 1rem;
-      max-width: 100%;
-    }
-  </style>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+  <meta name="description" content="A simple guide to HTML <head> elements">
+  <meta name="apple-mobile-web-app-title" content="🤯 HEAD">
+  <meta name="application-name" content="🤯 HEAD">
+  <!-- <meta name="theme-color" content="#2980b9"> -->
+  <!-- <meta name="google-site-verification" content=""> -->
+  <meta name="monetization" content="$ilp.uphold.com/KBfxJZi2y78w">
+  <title>🤯 HEAD - A simple guide to HTML &lt;head&gt; elements </title>
+  <link rel="stylesheet" href="main.css">
+  <!-- <link rel="mask-icon" href="favicon.svg" color="#2980b9"> -->
+  <!-- <link rel="icon" href="apple-touch-icon-precomposed.png"> -->
+  <!-- <link rel="apple-touch-icon" href="apple-touch-icon-precomposed.png"> -->
 </head>
-<body>
 
-  <header class="inverted">
-    <h1>Developer Tools</h1>
-  </header>
+  <body>
+    <div class="announcement">
+  <a href="https://blacklivesmatter.com/" rel="noopener noreferrer" target="_blank">Black Lives Matter</a>
+  <a href="https://eji.org/" rel="noopener noreferrer" target="_blank">The Equal Justice Initiative</a>
+  <a href="http://www.wetheprotesters.org/" rel="noopener noreferrer" target="_blank">We The Protesters</a>
+  <a href="https://deletefacebook.com/" rel="noopener noreferrer" target="_blank">Delete Facebook</a>
+</div>
+    <header class="site__header">
+  <div class="container">
+    <h1 class="site__title">🤯 HEAD</h1>
+    <!-- html<span>head</span>.dev -->
+    <!-- &lt;head&gt; cheatsheet -->
 
-  <main>
-    <ul class="projects">
-      <li class="project">
-        <a href="color-tools.html"><img src="assets/img/preview-color-tools.png" alt="Color Tools"></a>
-        <strong><a href="color-tools.html">Color Tools</a></strong>
-        <div class="project-description">A simple color converter and visualizer</div>
-      </li>
-      <li class="project">
-        <a href="flexbox-cheatsheet.html"><img src="assets/img/preview-flexbox-cheatsheet.png" alt="Flexbox Cheatsheet"></a>
-        <strong><a href="flexbox-cheatsheet.html">Flexbox Cheatsheet</a></strong>
-        <div class="project-description">A graphical overview of the CSS Flexible Box Layout properties</div>
-      </li>
-      <li class="project">
-        <a href="html-css-cheat-sheet.html"><img src="assets/img/html-css-cheatsheet.png" alt="Html Css Cheatsheet"></a>
-        <strong><a href="html-css-cheat-sheet.html">Html Css Cheatsheet</a></strong>
-        <div class="project-description">A great cheatsheet for html and css</div>
-      </li>
-    </ul>
-  </main>
+    <div class="header-content">
+      <div class="header-text">
+        <h2>A simple guide to HTML &lt;head&gt; elements</h2>
+        <!-- <h2>What's in your &lt;head&gt;?</h2> -->
 
-  <footer class="inverted">
-    <span>Built from a base by
-      <a href="https://darekkay.com" target="_blank" rel="noopener">
-        Darek Kay
-      </a>
-    </span>
-    <div class="github">
-      <span>
-        Fork me on
-        <a
-            href="https://github.com/uvacoder/dev-tools"
+        <div class="share-page">
+
+  <!-- PERF MEASUREMENTS ⚡️ -->
+
+  <!-- with facebook share button: 23 requests, 280 kb transferred, 793 kb resources -->
+  <!-- without facebook share button: 20 requests, 144 kb transferred, 268 kb resources -->
+  <!-- total facebook share button: 3 requests, 136 kB transferred, 525 kB resources -->
+
+  <!-- with twitter share button: 20 requests, 144 kb transferred, 267 kb resources -->
+  <!-- without twitter share button: 12 requests, 104 kb transferred, 113 kb resources -->
+  <!-- total twitter share button: 8 requests, 40 kb transferred, 154 kb resources -->
+
+  <!-- with github star button: 12 requests, 104 kb transferred, 114 kb resources -->
+  <!-- without github star button: 10 requests, 95.8 kb transferred, 93.1 kb resources -->
+  <!-- total github star button: 2 requests, 8.2 kb transferred, 20.9 kb resources -->
+
+  <!-- Share via Facebook -->
+  <!-- <iframe
+    src="https://www.facebook.com/plugins/share_button.php?href=https://htmlhead.dev/&layout=button&mobile_iframe=true&width=58&height=20&appId"
+    width="58"
+    height="20"
+    style="border:none;overflow:hidden"
+    scrolling="no"
+    frameborder="0"
+    allowTransparency="true">
+  </iframe> -->
+  <!-- End Share via Facebook -->
+
+  <!-- Share via Twitter -->
+  <!-- <a
+    class="twitter-share-button"
+    href="https://twitter.com/share"
+    data-url="https://htmlhead.dev/"
+    data-text="A simple guide to HTML <head> elements"
+    data-via="joshbuchea"
+    data-size="small">
+    Tweet
+  </a>
+  <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+    if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+    fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+  </script> -->
+  <!-- End Share via Twitter -->
+
+  <!-- <a href="https://twitter.com/joshbuchea" class="twitter-follow-button" data-show-count="false">Follow @joshbuchea</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> -->
+
+  <!-- Star on GitHub -->
+  <span></span>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+  <!-- End Star on GitHub -->
+
+  <!-- <p>
+    <a
+      href="#"
+      rel="noopener noreferrer"
+      target="_blank">Share HEAD on twitter</a>
+  </p> -->
+</div>
+
+
+        <p>
+          A project by
+          <a href="https://twitter.com/joshbuchea" rel="noopener noreferrer" target="_blank">Josh Buchea</a>
+        </p>
+      </div>
+
+      <div class="header-link">
+        <!-- <p>
+          Try the free email newsletter I do with my wife — 
+          <a
+            href="https://smiledaily.us"
+            rel="noopener noreferrer"
             target="_blank"
-            rel="noopener"
-        >GitHub</a>
-      </span>
-      <svg aria-hidden="true" focusable="false" class="icon icon-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-        <path fill="#fff" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
-      </svg>
+          >Smile Daily 😊</a>
+        </p> -->
+        <!-- <p>
+          Please use my 
+          <a
+            href="https://amazon.com/?tag=buchea-20"
+            rel="noopener noreferrer"
+            target="_blank"
+          >affiliate link</a>
+          when you shop at Amazon — thank you 🙏
+        </p> -->
+      </div>
     </div>
-  </footer>
+
+    <a href="//github.com/joshbuchea/head" class="github" target="_blank" rel="noopener noreferrer">
+      <svg xmlns="//www.w3.org/2000/svg" viewBox="0 0 250 250" fill="#fff">
+        <path d="M0 0l115 115h15l12 27 108 108V0z" fill="#000"></path>
+        <path class="github__arm" d="M128 109c-15-9-9-19-9-19 3-7 2-11 2-11-1-7 3-2 3-2 4 5 2 11 2 11-3 10 5 15 9 16" style=""></path>
+        <path class="github__body" d="M115 115s4 2 5 0l14-14c3-2 6-3 8-3-8-11-15-24 2-41 5-5 10-7 16-7 1-2 3-7 12-11 0 0 5 3 7 16 4 2 8 5 12 9s7 8 9 12c14 3 17 7 17 7-4 8-9 11-11 11 0 6-2 11-7 16-16 16-30 10-41 2 0 3-1 7-5 11l-12 11c-1 1 1 5 1 5z"></path>
+      </svg>
+    </a>
+  </div>
+</header>
+
+    <div class="site__main">
+      <div class="container">
+        <h1 id="-head">🤯 HEAD</h1>
+
+<blockquote>
+  <p>A simple guide to HTML <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> elements</p>
+</blockquote>
+
+<p><a href="https://github.com/joshbuchea/HEAD/graphs/contributors" rel="noopener noreferrer" target="_blank"><img src="https://img.shields.io/github/contributors/joshbuchea/head.svg?style=for-the-badge" alt="Contributors"></a>
+<a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener noreferrer" target="_blank"><img src="https://img.shields.io/badge/license-CC0-green.svg?style=for-the-badge" alt="CC0"></a>
+<a href="https://twitter.com/joshbuchea" rel="noopener noreferrer" target="_blank"><img src="https://img.shields.io/badge/Follow_@joshbuchea-blue?logo=twitter&amp;logoColor=white&amp;style=for-the-badge" alt="Follow @joshbuchea on Twitter"></a></p>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+
+<ul>
+  <li><a href="#recommended-minimum">Recommended Minimum</a></li>
+  <li><a href="#elements">Elements</a></li>
+  <li><a href="#meta">Meta</a></li>
+  <li><a href="#link">Link</a></li>
+  <li><a href="#icons">Icons</a></li>
+  <li><a href="#social">Social</a>
+    <ul>
+      <li><a href="#facebook-open-graph">Facebook Open Graph</a></li>
+      <li><a href="#twitter-card">Twitter Card</a></li>
+      <li><a href="#twitter-privacy">Twitter Privacy</a></li>
+      <li><a href="#schemaorg">Schema.org</a></li>
+      <li><a href="#pinterest">Pinterest</a></li>
+      <li><a href="#facebook-instant-articles">Facebook Instant Articles</a></li>
+      <li><a href="#oembed">OEmbed</a></li>
+      <li><a href="#qqwechat">QQ/Wechat</a></li>
+    </ul>
+  </li>
+  <li><a href="#browsers--platforms">Browsers / Platforms</a>
+    <ul>
+      <li><a href="#apple-ios">Apple iOS</a></li>
+      <li><a href="#google-android">Google Android</a></li>
+      <li><a href="#google-chrome">Google Chrome</a></li>
+      <li><a href="#microsoft-internet-explorer">Microsoft Internet Explorer</a></li>
+    </ul>
+  </li>
+  <li><a href="#browsers-chinese">Browsers (Chinese)</a>
+    <ul>
+      <li><a href="#360-browser">360 Browser</a></li>
+      <li><a href="#qq-mobile-browser">QQ Mobile Browser</a></li>
+      <li><a href="#uc-mobile-browser">UC Mobile Browser</a></li>
+    </ul>
+  </li>
+  <li><a href="#app-links">App Links</a></li>
+  <li><a href="#other-resources">Other Resources</a></li>
+  <li><a href="#related-projects">Related Projects</a></li>
+  <li><a href="#other-formats">Other Formats</a></li>
+  <li><a href="#-translations">Translations</a></li>
+  <li><a href="#-contributing">Contributing</a>
+    <ul>
+      <li><a href="#contributors">Contributors</a></li>
+    </ul>
+  </li>
+  <li><a href="#-author">Author</a></li>
+  <li><a href="#-license">License</a></li>
+</ul>
+
+<h2 id="recommended-minimum">Recommended Minimum</h2>
+
+<p>Below are the essential elements for any web document (websites/apps):</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
+<span class="c">&lt;!--
+  The above 2 meta tags *must* come first in the &lt;head&gt;
+  to consistently ensure proper document rendering.
+  Any other head element should come *after* these tags.
+ --&gt;</span>
+<span class="nt">&lt;title&gt;</span>Page Title<span class="nt">&lt;/title&gt;</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">meta charset</code> - defines the encoding of the website, <code class="language-plaintext highlighter-rouge">utf-8</code> is the standard</p>
+
+<p><code class="language-plaintext highlighter-rouge">meta name="viewport"</code> - viewport settings related to mobile responsiveness</p>
+
+<p><code class="language-plaintext highlighter-rouge">width=device-width</code> - use the physical width of the device (great for mobile!)</p>
+
+<p><code class="language-plaintext highlighter-rouge">initial-scale=1</code> - the initial zoom, 1 means no zoom</p>
+
+<p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
+
+<h2 id="elements">Elements</h2>
+
+<p>Valid <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> elements include <code class="language-plaintext highlighter-rouge">meta</code>, <code class="language-plaintext highlighter-rouge">link</code>, <code class="language-plaintext highlighter-rouge">title</code>, <code class="language-plaintext highlighter-rouge">style</code>, <code class="language-plaintext highlighter-rouge">script</code>, <code class="language-plaintext highlighter-rouge">noscript</code>, and <code class="language-plaintext highlighter-rouge">base</code>.</p>
+
+<p>These elements provide information for how a document should be perceived, and rendered, by web technologies. e.g. browsers, search engines, bots, etc.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!--
+  Set the character encoding for this document, so that
+  all characters within the UTF-8 space (such as emoji)
+  are rendered correctly.
+--&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Set the document's title --&gt;</span>
+<span class="nt">&lt;title&gt;</span>Page Title<span class="nt">&lt;/title&gt;</span>
+
+<span class="c">&lt;!-- Set the base URL for all relative URLs within the document --&gt;</span>
+<span class="nt">&lt;base</span> <span class="na">href=</span><span class="s">"<a href="https://example.com/page.html" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="2">https://example.com/page.html</a>"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Link to an external CSS file --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"styles.css"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Used for adding in-document CSS --&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+  <span class="c">/* ... */</span>
+<span class="nt">&lt;/style&gt;</span>
+
+<span class="c">&lt;!-- JavaScript &amp; No-JavaScript tags --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"script.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+  <span class="c1">// function(s) go here</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;noscript&gt;</span>
+  <span class="c">&lt;!-- No JS alternative --&gt;</span>
+<span class="nt">&lt;/noscript&gt;</span>
+</code></pre></div></div>
+
+<p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
+
+<h2 id="meta">Meta</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!--
+  The following 2 meta tags *must* come first in the &lt;head&gt;
+  to consistently ensure proper document rendering.
+  Any other head element should come *after* these tags.
+--&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!--
+  Allows control over where resources are loaded from.
+  Place as early in the &lt;head&gt; as possible, as the tag  
+  only applies to resources that are declared after it.
+--&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"Content-Security-Policy"</span> <span class="na">content=</span><span class="s">"default-src 'self'"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Name of web application (only should be used if the website is used as an app) --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"application-name"</span> <span class="na">content=</span><span class="s">"Application Name"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Theme Color for Chrome, Firefox OS and Opera --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"theme-color"</span> <span class="na">content=</span><span class="s">"#4285f4"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Short description of the document (limit to 150 characters) --&gt;</span>
+<span class="c">&lt;!-- This content *may* be used as a part of search engine results. --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"description"</span> <span class="na">content=</span><span class="s">"A description of the page"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Control the behavior of search engine crawling and indexing --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"robots"</span> <span class="na">content=</span><span class="s">"index,follow"</span><span class="nt">&gt;</span><span class="c">&lt;!-- All Search Engines --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"googlebot"</span> <span class="na">content=</span><span class="s">"index,follow"</span><span class="nt">&gt;</span><span class="c">&lt;!-- Google Specific --&gt;</span>
+
+<span class="c">&lt;!-- Tells Google not to show the sitelinks search box --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"google"</span> <span class="na">content=</span><span class="s">"nositelinkssearchbox"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Tells Google not to provide a translation for this document --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"google"</span> <span class="na">content=</span><span class="s">"notranslate"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Verify website ownership --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"google-site-verification"</span> <span class="na">content=</span><span class="s">"verification_token"</span><span class="nt">&gt;</span><span class="c">&lt;!-- Google Search Console --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"yandex-verification"</span> <span class="na">content=</span><span class="s">"verification_token"</span><span class="nt">&gt;</span><span class="c">&lt;!-- Yandex Webmasters --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"msvalidate.01"</span> <span class="na">content=</span><span class="s">"verification_token"</span><span class="nt">&gt;</span><span class="c">&lt;!-- Bing Webmaster Center --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"alexaVerifyID"</span> <span class="na">content=</span><span class="s">"verification_token"</span><span class="nt">&gt;</span><span class="c">&lt;!-- Alexa Console --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"p:domain_verify"</span> <span class="na">content=</span><span class="s">"code_from_pinterest"</span><span class="nt">&gt;</span><span class="c">&lt;!-- Pinterest Console--&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"norton-safeweb-site-verification"</span> <span class="na">content=</span><span class="s">"norton_code"</span><span class="nt">&gt;</span><span class="c">&lt;!-- Norton Safe Web --&gt;</span>
+
+<span class="c">&lt;!-- Identify the software used to build the document (i.e. - WordPress, Dreamweaver) --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"generator"</span> <span class="na">content=</span><span class="s">"program"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Short description of your document's subject --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"subject"</span> <span class="na">content=</span><span class="s">"your document's subject"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Gives a general age rating based on the document's content --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"rating"</span> <span class="na">content=</span><span class="s">"General"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Allows control over how referrer information is passed --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"referrer"</span> <span class="na">content=</span><span class="s">"no-referrer"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Disable automatic detection and formatting of possible phone numbers --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"format-detection"</span> <span class="na">content=</span><span class="s">"telephone=no"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Completely opt out of DNS prefetching by setting to "off" --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"x-dns-prefetch-control"</span> <span class="na">content=</span><span class="s">"off"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Specifies the document to appear in a specific frame --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"Window-Target"</span> <span class="na">content=</span><span class="s">"_value"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Geo tags --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"ICBM"</span> <span class="na">content=</span><span class="s">"latitude, longitude"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"geo.position"</span> <span class="na">content=</span><span class="s">"latitude;longitude"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"geo.region"</span> <span class="na">content=</span><span class="s">"country[-state]"</span><span class="nt">&gt;</span><span class="c">&lt;!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"geo.placename"</span> <span class="na">content=</span><span class="s">"city/town"</span><span class="nt">&gt;</span><span class="c">&lt;!-- eg. content="New York City" --&gt;</span>
+
+<span class="c">&lt;!-- Web Monetization <a href="https://webmonetization.org/docs/getting-started" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="4">https://webmonetization.org/docs/getting-started</a> --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"monetization"</span> <span class="na">content=</span><span class="s">"$paymentpointer.example"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>📖 <a href="https://support.google.com/webmasters/answer/79812?hl=en" rel="noopener noreferrer" target="_blank">Meta tags that Google understands</a></li>
+  <li>📖 <a href="https://wiki.whatwg.org/wiki/MetaExtensions" rel="noopener noreferrer" target="_blank">WHATWG Wiki: MetaExtensions</a></li>
+  <li>📖 <a href="https://en.wikipedia.org/wiki/ICBM_address#Modern_use" rel="noopener noreferrer" target="_blank">ICBM on Wikipedia</a></li>
+  <li>📖 <a href="https://en.wikipedia.org/wiki/Geotagging#HTML_pages" rel="noopener noreferrer" target="_blank">Geotagging on Wikipedia</a></li>
+</ul>
+
+<p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
+
+<h2 id="link">Link</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Points to an external stylesheet --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"<a href="https://example.com/styles.css" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="5">https://example.com/styles.css</a>"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Helps prevent duplicate content issues --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"canonical"</span> <span class="na">href=</span><span class="s">"<a href="https://example.com/article/?page=2" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="6">https://example.com/article/?page=2</a>"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Links to an AMP HTML version of the current document --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"amphtml"</span> <span class="na">href=</span><span class="s">"<a href="https://example.com/path/to/amp-version.html" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="7">https://example.com/path/to/amp-version.html</a>"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Links to a JSON file that specifies "installation" credentials for the web applications --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"manifest"</span> <span class="na">href=</span><span class="s">"manifest.json"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Links to information about the author(s) of the document --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"author"</span> <span class="na">href=</span><span class="s">"humans.txt"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Refers to a copyright statement that applies to the link's context --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"license"</span> <span class="na">href=</span><span class="s">"copyright.html"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Gives a reference to a location in your document that may be in another language --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"alternate"</span> <span class="na">href=</span><span class="s">"<a href="https://es.example.com/" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="8">https://es.example.com/</a>"</span> <span class="na">hreflang=</span><span class="s">"es"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Provides information about an author or another person --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"me"</span> <span class="na">href=</span><span class="s">"<a href="https://google.com/profiles/thenextweb" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="9">https://google.com/profiles/thenextweb</a>"</span> <span class="na">type=</span><span class="s">"text/html"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"me"</span> <span class="na">href=</span><span class="s">"<a href="mailto:name@example.com" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="10">mailto:name@example.com</a>"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"me"</span> <span class="na">href=</span><span class="s">"<a href="sms:+15035550125" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="11">sms:+15035550125</a>"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Links to a document that describes a collection of records, documents, or other materials of historical interest --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"archives"</span> <span class="na">href=</span><span class="s">"<a href="https://example.com/archives" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="12">https://example.com/archives</a>/"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Links to top level resource in an hierarchical structure --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"index"</span> <span class="na">href=</span><span class="s">"<a href="https://example.com/article" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="13">https://example.com/article</a>/"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Provides a self reference - useful when the document has multiple possible references --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"self"</span> <span class="na">type=</span><span class="s">"application/atom+xml"</span> <span class="na">href=</span><span class="s">"<a href="https://example.com/atom.xml" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="14">https://example.com/atom.xml</a>"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- The first, last, previous, and next documents in a series of documents, respectively --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"first"</span> <span class="na">href=</span><span class="s">"<a href="https://example.com/article" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="15">https://example.com/article</a>/"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"last"</span> <span class="na">href=</span><span class="s">"<a href="https://example.com/article/?page=42" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="16">https://example.com/article/?page=42</a>"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"prev"</span> <span class="na">href=</span><span class="s">"<a href="https://example.com/article/?page=1" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="17">https://example.com/article/?page=1</a>"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"next"</span> <span class="na">href=</span><span class="s">"<a href="https://example.com/article/?page=3" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="18">https://example.com/article/?page=3</a>"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Used when a 3rd party service is utilized to maintain a blog --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"EditURI"</span> <span class="na">href=</span><span class="s">"<a href="https://example.com/xmlrpc.php?rsd" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="19">https://example.com/xmlrpc.php?rsd</a>"</span> <span class="na">type=</span><span class="s">"application/rsd+xml"</span> <span class="na">title=</span><span class="s">"RSD"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Forms an automated comment when another WordPress blog links to your WordPress blog or post --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"pingback"</span> <span class="na">href=</span><span class="s">"<a href="https://example.com/xmlrpc.php" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="20">https://example.com/xmlrpc.php</a>"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Notifies a URL when you link to it on your document --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"webmention"</span> <span class="na">href=</span><span class="s">"<a href="https://example.com/webmention" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="21">https://example.com/webmention</a>"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Enables posting to your own domain using a Micropub client --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"micropub"</span> <span class="na">href=</span><span class="s">"<a href="https://example.com/micropub" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="22">https://example.com/micropub</a>"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Open Search --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"search"</span> <span class="na">href=</span><span class="s">"/open-search.xml"</span> <span class="na">type=</span><span class="s">"application/opensearchdescription+xml"</span> <span class="na">title=</span><span class="s">"Search Title"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Feeds --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"alternate"</span> <span class="na">href=</span><span class="s">"<a href="https://feeds.feedburner.com/example" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="23">https://feeds.feedburner.com/example</a>"</span> <span class="na">type=</span><span class="s">"application/rss+xml"</span> <span class="na">title=</span><span class="s">"RSS"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"alternate"</span> <span class="na">href=</span><span class="s">"<a href="https://example.com/feed.atom" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="24">https://example.com/feed.atom</a>"</span> <span class="na">type=</span><span class="s">"application/atom+xml"</span> <span class="na">title=</span><span class="s">"Atom 0.3"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Prefetching, preloading, prebrowsing --&gt;</span>
+<span class="c">&lt;!-- More info: <a href="https://css-tricks.com/prefetching-preloading-prebrowsing/" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="25">https://css-tricks.com/prefetching-preloading-prebrowsing/</a> --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"dns-prefetch"</span> <span class="na">href=</span><span class="s">"//<a href="http://example.com" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="26">example.com</a>/"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"preconnect"</span> <span class="na">href=</span><span class="s">"<a href="https://www.example.com" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="27">https://www.example.com</a>/"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"prefetch"</span> <span class="na">href=</span><span class="s">"<a href="https://www.example.com" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="28">https://www.example.com</a>/"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"prerender"</span> <span class="na">href=</span><span class="s">"<a href="https://example.com" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="29">https://example.com</a>/"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"preload"</span> <span class="na">href=</span><span class="s">"image.png"</span> <span class="na">as=</span><span class="s">"image"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>📖 <a href="https://www.iana.org/assignments/link-relations/link-relations.xhtml" rel="noopener noreferrer" target="_blank">Link Relations</a></li>
+</ul>
+
+<p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
+
+<h2 id="icons">Icons</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- For IE 10 and below --&gt;</span>
+<span class="c">&lt;!-- Place favicon.ico in the root directory - no tag necessary --&gt;</span>
+
+<span class="c">&lt;!-- Icon in the highest resolution we need it for --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"icon"</span> <span class="na">sizes=</span><span class="s">"192x192"</span> <span class="na">href=</span><span class="s">"/path/to/icon.png"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Apple Touch Icon (reuse 192px icon.png) --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon"</span> <span class="na">href=</span><span class="s">"/path/to/apple-touch-icon.png"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Safari Pinned Tab Icon --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"mask-icon"</span> <span class="na">href=</span><span class="s">"/path/to/icon.svg"</span> <span class="na">color=</span><span class="s">"blue"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>📖 <a href="https://bitsofco.de/all-about-favicons-and-touch-icons/" rel="noopener noreferrer" target="_blank">All About Favicons (And Touch Icons)</a></li>
+  <li>📖 <a href="https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/pinnedTabs/pinnedTabs.html" rel="noopener noreferrer" target="_blank">Creating Pinned Tab Icons</a></li>
+  <li>📖 <a href="https://github.com/audreyr/favicon-cheat-sheet" rel="noopener noreferrer" target="_blank">Favicon Cheat Sheet</a></li>
+  <li>📖 <a href="https://developers.google.com/web/fundamentals/design-and-ux/browser-customization/" rel="noopener noreferrer" target="_blank">Icons &amp; Browser Colors</a></li>
+</ul>
+
+<p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
+
+<h2 id="social">Social</h2>
+
+<h3 id="facebook-open-graph">Facebook Open Graph</h3>
+<blockquote>
+  <p>Most content is shared to Facebook as a URL, so it’s important that you mark up your website with Open Graph tags to take control over how your content appears on Facebook. <a href="https://developers.facebook.com/docs/sharing/webmasters#markup" rel="noopener noreferrer" target="_blank">More about Facebook Open Graph Markup</a></p>
+</blockquote>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"fb:app_id"</span> <span class="na">content=</span><span class="s">"123456789"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:url"</span> <span class="na">content=</span><span class="s">"<a href="https://example.com/page.html" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="30">https://example.com/page.html</a>"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:type"</span> <span class="na">content=</span><span class="s">"website"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:title"</span> <span class="na">content=</span><span class="s">"Content Title"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:image"</span> <span class="na">content=</span><span class="s">"<a href="https://example.com/image.jpg" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="31">https://example.com/image.jpg</a>"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:image:alt"</span> <span class="na">content=</span><span class="s">"A description of what is in the image (not a caption)"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:description"</span> <span class="na">content=</span><span class="s">"Description Here"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:site_name"</span> <span class="na">content=</span><span class="s">"Site Name"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:locale"</span> <span class="na">content=</span><span class="s">"en_US"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"article:author"</span> <span class="na">content=</span><span class="s">""</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>📖 <a href="http://ogp.me/" rel="noopener noreferrer" target="_blank">Open Graph protocol</a></li>
+  <li>🛠 Test your page with the <a href="https://developers.facebook.com/tools/debug/" rel="noopener noreferrer" target="_blank">Facebook Sharing Debugger</a></li>
+</ul>
+
+<h3 id="twitter-card">Twitter Card</h3>
+<blockquote>
+  <p>With Twitter Cards, you can attach rich photos, videos and media experiences to Tweets, helping to drive traffic to your website. <a href="https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards" rel="noopener noreferrer" target="_blank">More about Twitter Cards</a></p>
+</blockquote>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"twitter:card"</span> <span class="na">content=</span><span class="s">"summary"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"twitter:site"</span> <span class="na">content=</span><span class="s">"@site_account"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"twitter:creator"</span> <span class="na">content=</span><span class="s">"@individual_account"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"twitter:url"</span> <span class="na">content=</span><span class="s">"<a href="https://example.com/page.html" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="32">https://example.com/page.html</a>"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"twitter:title"</span> <span class="na">content=</span><span class="s">"Content Title"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"twitter:description"</span> <span class="na">content=</span><span class="s">"Content description less than 200 characters"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"twitter:image"</span> <span class="na">content=</span><span class="s">"<a href="https://example.com/image.jpg" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="33">https://example.com/image.jpg</a>"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"twitter:image:alt"</span> <span class="na">content=</span><span class="s">"A text description of the image conveying the essential nature of an image to users who are visually impaired. Maximum 420 characters."</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>📖 <a href="https://dev.twitter.com/cards/getting-started" rel="noopener noreferrer" target="_blank">Getting started with cards — Twitter Developers</a></li>
+  <li>🛠 Test your page with the <a href="https://cards-dev.twitter.com/validator" rel="noopener noreferrer" target="_blank">Twitter Card Validator</a></li>
+</ul>
+
+<h3 id="twitter-privacy">Twitter Privacy</h3>
+<p>If you embed tweets in your website, Twitter can use information from your site to tailor content and suggestions to Twitter users. <a href="https://dev.twitter.com/web/overview/privacy#what-privacy-options-do-website-publishers-have" rel="noopener noreferrer" target="_blank">More about Twitter privacy options</a>.</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- disallow Twitter from using your site's info for personalization purposes --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"twitter:dnt"</span> <span class="na">content=</span><span class="s">"on"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<h3 id="schemaorg"><a href="http://Schema.org" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="34">Schema.org</a></h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">""</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"<a href="https://schema.org/Article" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="35">https://schema.org/Article</a>"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+      <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"author"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"publisher"</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;meta</span> <span class="na">itemprop=</span><span class="s">"name"</span> <span class="na">content=</span><span class="s">"Content Title"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;meta</span> <span class="na">itemprop=</span><span class="s">"description"</span> <span class="na">content=</span><span class="s">"Content description less than 200 characters"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;meta</span> <span class="na">itemprop=</span><span class="s">"image"</span> <span class="na">content=</span><span class="s">"<a href="https://example.com/image.jpg" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="36">https://example.com/image.jpg</a>"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<p><strong>Note:</strong> These meta tags require the <code class="language-plaintext highlighter-rouge">itemscope</code> and <code class="language-plaintext highlighter-rouge">itemtype</code> attributes to be added to the <code class="language-plaintext highlighter-rouge">&lt;html&gt;</code> tag.</p>
+
+<ul>
+  <li>📖 <a href="https://schema.org/docs/gs.html" rel="noopener noreferrer" target="_blank">Getting Started - schema.org</a></li>
+  <li>🛠 Test your page with the <a href="https://search.google.com/test/rich-results" rel="noopener noreferrer" target="_blank">Rich Results Test</a></li>
+</ul>
+
+<h3 id="pinterest">Pinterest</h3>
+
+<p>Pinterest lets you prevent people from saving things from your website, according <a href="https://help.pinterest.com/en/business/article/prevent-saves-to-pinterest-from-your-site" rel="noopener noreferrer" target="_blank">to their help center</a>. The <code class="language-plaintext highlighter-rouge">description</code> is optional.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"pinterest"</span> <span class="na">content=</span><span class="s">"nopin"</span> <span class="na">description=</span><span class="s">"Sorry, you can't save from my website!"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<h3 id="facebook-instant-articles">Facebook Instant Articles</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"op:markup_version"</span> <span class="na">content=</span><span class="s">"v1.0"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- The URL of the web version of your article --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"canonical"</span> <span class="na">href=</span><span class="s">"<a href="https://example.com/article.html" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="38">https://example.com/article.html</a>"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- The style to be used for this article --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"fb:article_style"</span> <span class="na">content=</span><span class="s">"myarticlestyle"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>📖 <a href="https://developers.facebook.com/docs/instant-articles/guides/articlecreate" rel="noopener noreferrer" target="_blank">Creating Articles - Instant Articles</a></li>
+  <li>📖 <a href="https://developers.facebook.com/docs/instant-articles/reference" rel="noopener noreferrer" target="_blank">Code Samples - Instant Articles</a></li>
+</ul>
+
+<h3 id="oembed">OEmbed</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"alternate"</span> <span class="na">type=</span><span class="s">"application/json+oembed"</span>
+  <span class="na">href=</span><span class="s">"<a href="https://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;amp;format=json" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="39">https://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;amp;format=json</a>"</span>
+  <span class="na">title=</span><span class="s">"oEmbed Profile: JSON"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"alternate"</span> <span class="na">type=</span><span class="s">"text/xml+oembed"</span>
+  <span class="na">href=</span><span class="s">"<a href="https://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;amp;format=xml" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="40">https://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;amp;format=xml</a>"</span>
+  <span class="na">title=</span><span class="s">"oEmbed Profile: XML"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>📖 <a href="https://oembed.com/" rel="noopener noreferrer" target="_blank">oEmbed format</a></li>
+</ul>
+
+<h3 id="qqwechat">QQ/Wechat</h3>
+
+<p>Users share web pages to qq wechat will have a formatted message</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;meta</span> <span class="na">itemprop=</span><span class="s">"name"</span> <span class="na">content=</span><span class="s">"share title"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">itemprop=</span><span class="s">"image"</span> <span class="na">content=</span><span class="s">"<a href="http://imgcache.qq.com/qqshow/ac/v4/global/logo.png" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="41">http://imgcache.qq.com/qqshow/ac/v4/global/logo.png</a>"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"description"</span> <span class="na">itemprop=</span><span class="s">"description"</span> <span class="na">content=</span><span class="s">"share content"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+<ul>
+  <li>📖 <a href="http://open.mobile.qq.com/api/mqq/index#api:setShareInfo" rel="noopener noreferrer" target="_blank">Code Format Docs</a></li>
+</ul>
+
+<p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
+
+<h2 id="browsers--platforms">Browsers / Platforms</h2>
+
+<h3 id="apple-ios">Apple iOS</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Smart App Banner --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"apple-itunes-app"</span> <span class="na">content=</span><span class="s">"app-id=APP_ID,affiliate-data=AFFILIATE_ID,app-argument=SOME_TEXT"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Disable automatic detection and formatting of possible phone numbers --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"format-detection"</span> <span class="na">content=</span><span class="s">"telephone=no"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Launch Icon (180x180px or larger) --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon"</span> <span class="na">href=</span><span class="s">"/path/to/apple-touch-icon.png"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Launch Screen Image --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-startup-image"</span> <span class="na">href=</span><span class="s">"/path/to/launch.png"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Launch Icon Title --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"apple-mobile-web-app-title"</span> <span class="na">content=</span><span class="s">"App Title"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Enable standalone (full-screen) mode --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"apple-mobile-web-app-capable"</span> <span class="na">content=</span><span class="s">"yes"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Status bar appearance (has no effect unless standalone mode is enabled) --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"apple-mobile-web-app-status-bar-style"</span> <span class="na">content=</span><span class="s">"black"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- iOS app deep linking --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"apple-itunes-app"</span> <span class="na">content=</span><span class="s">"app-id=APP-ID, app-argument=http/<a href="http://url-sample.com" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="42">url-sample.com</a>"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"alternate"</span> <span class="na">href=</span><span class="s">"ios-app://APP-ID/http/url-sample.com"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>📖 <a href="https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html" rel="noopener noreferrer" target="_blank">Configuring Web Applications</a></li>
+</ul>
+
+<h3 id="google-android">Google Android</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"theme-color"</span> <span class="na">content=</span><span class="s">"#E64545"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Add to home screen --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"mobile-web-app-capable"</span> <span class="na">content=</span><span class="s">"yes"</span><span class="nt">&gt;</span>
+<span class="c">&lt;!-- More info: <a href="https://developer.chrome.com/multidevice/android/installtohomescreen" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="44">https://developer.chrome.com/multidevice/android/installtohomescreen</a> --&gt;</span>
+
+<span class="c">&lt;!-- Android app deep linking --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"google-play-app"</span> <span class="na">content=</span><span class="s">"app-id=package-name"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"alternate"</span> <span class="na">href=</span><span class="s">"android-app://package-name/http/url-sample.com"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<h3 id="google-chrome">Google Chrome</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"chrome-webstore-item"</span> <span class="na">href=</span><span class="s">"<a href="https://chrome.google.com/webstore/detail/APP_ID" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="46">https://chrome.google.com/webstore/detail/APP_ID</a>"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Disable translation prompt --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"google"</span> <span class="na">content=</span><span class="s">"notranslate"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<h3 id="microsoft-internet-explorer">Microsoft Internet Explorer</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Force IE 8/9/10 to use its latest rendering engine --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"x-ua-compatible"</span> <span class="na">content=</span><span class="s">"ie=edge"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Disable automatic detection and formatting of possible phone numbers by Skype Toolbar browser extension --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"skype_toolbar"</span> <span class="na">content=</span><span class="s">"skype_toolbar_parser_compatible"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Windows Tiles --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"msapplication-config"</span> <span class="na">content=</span><span class="s">"/browserconfig.xml"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<p>Minimum required xml markup for <code class="language-plaintext highlighter-rouge">browserconfig.xml</code>:</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;browserconfig&gt;</span>
+   <span class="nt">&lt;msapplication&gt;</span>
+     <span class="nt">&lt;tile&gt;</span>
+        <span class="nt">&lt;square70x70logo</span> <span class="na">src=</span><span class="s">"small.png"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;square150x150logo</span> <span class="na">src=</span><span class="s">"medium.png"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;wide310x150logo</span> <span class="na">src=</span><span class="s">"wide.png"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;square310x310logo</span> <span class="na">src=</span><span class="s">"large.png"</span><span class="nt">/&gt;</span>
+     <span class="nt">&lt;/tile&gt;</span>
+   <span class="nt">&lt;/msapplication&gt;</span>
+<span class="nt">&lt;/browserconfig&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>📖 <a href="https://msdn.microsoft.com/en-us/library/dn320426.aspx" rel="noopener noreferrer" target="_blank">Browser configuration schema reference</a></li>
+</ul>
+
+<p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
+
+<h2 id="browsers-chinese">Browsers (Chinese)</h2>
+
+<h3 id="360-browser">360 Browser</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Select rendering engine order --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"renderer"</span> <span class="na">content=</span><span class="s">"webkit|ie-comp|ie-stand"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<h3 id="qq-mobile-browser">QQ Mobile Browser</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Locks the screen into the specified orientation --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"x5-orientation"</span> <span class="na">content=</span><span class="s">"landscape/portrait"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Display this document in fullscreen --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"x5-fullscreen"</span> <span class="na">content=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Document will be displayed in "application mode" (fullscreen, etc.) --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"x5-page-mode"</span> <span class="na">content=</span><span class="s">"app"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<h3 id="uc-mobile-browser">UC Mobile Browser</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Locks the screen into the specified orientation --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"screen-orientation"</span> <span class="na">content=</span><span class="s">"landscape/portrait"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Display this document in fullscreen --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"full-screen"</span> <span class="na">content=</span><span class="s">"yes"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- UC browser will display images even if in "text mode" --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"imagemode"</span> <span class="na">content=</span><span class="s">"force"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Document will be displayed in "application mode"(fullscreen, forbidding gesture, etc.) --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"browsermode"</span> <span class="na">content=</span><span class="s">"application"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Disabled the UC browser's "night mode" for this document --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"nightmode"</span> <span class="na">content=</span><span class="s">"disable"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Simplify the document to reduce data transfer --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"layoutmode"</span> <span class="na">content=</span><span class="s">"fitscreen"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Disable the UC browser's feature of "scaling font up when there are many words in this document" --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"wap-font-scale"</span> <span class="na">content=</span><span class="s">"no"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>📖 <a href="https://www.uc.cn/download/UCBrowser_U3_API.doc" rel="noopener noreferrer" target="_blank">UC Browser Docs</a></li>
+</ul>
+
+<p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
+
+<h2 id="app-links">App Links</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- iOS --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"al:ios:url"</span> <span class="na">content=</span><span class="s">"applinks://docs"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"al:ios:app_store_id"</span> <span class="na">content=</span><span class="s">"12345"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"al:ios:app_name"</span> <span class="na">content=</span><span class="s">"App Links"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Android --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"al:android:url"</span> <span class="na">content=</span><span class="s">"applinks://docs"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"al:android:app_name"</span> <span class="na">content=</span><span class="s">"App Links"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"al:android:package"</span> <span class="na">content=</span><span class="s">"org.applinks"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Web fall back --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"al:web:url"</span> <span class="na">content=</span><span class="s">"<a href="https://applinks.org/documentation" dir="ltr" x-apple-data-detectors="true" x-apple-data-detectors-type="link" x-apple-data-detectors-result="50">https://applinks.org/documentation</a>"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>📖 <a href="https://developers.facebook.com/docs/applinks" rel="noopener noreferrer" target="_blank">App Links</a></li>
+</ul>
+
+<p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
+
+<h2 id="other-resources">Other Resources</h2>
+
+<ul>
+  <li>📖 <a href="https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md" rel="noopener noreferrer" target="_blank">HTML5 Boilerplate Docs: The HTML</a></li>
+  <li>📖 <a href="https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md" rel="noopener noreferrer" target="_blank">HTML5 Boilerplate Docs: Extend and customize</a></li>
+</ul>
+
+<p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
+
+<h2 id="related-projects">Related Projects</h2>
+
+<ul>
+  <li><a href="https://github.com/joshbuchea/atom-html-head-snippets" rel="noopener noreferrer" target="_blank">Atom HTML Head Snippets</a> - Atom package for <code class="language-plaintext highlighter-rouge">HEAD</code> snippets</li>
+  <li><a href="https://github.com/marcobiedermann/sublime-head-snippets" rel="noopener noreferrer" target="_blank">Sublime Text HTML Head Snippets</a> - Sublime Text package for <code class="language-plaintext highlighter-rouge">HEAD</code> snippets</li>
+  <li><a href="https://github.com/hemanth/head-it" rel="noopener noreferrer" target="_blank">head-it</a> - CLI interface for <code class="language-plaintext highlighter-rouge">HEAD</code> snippets</li>
+  <li><a href="https://github.com/ktquez/vue-head" rel="noopener noreferrer" target="_blank">vue-head</a> - Manipulating the meta information of the <code class="language-plaintext highlighter-rouge">HEAD</code> tag for Vue.js</li>
+</ul>
+
+<p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
+
+<h2 id="other-formats">Other Formats</h2>
+
+<ul>
+  <li>📄 <a href="https://gitprint.com/joshbuchea/HEAD/blob/master/README.md" rel="noopener noreferrer" target="_blank">PDF</a></li>
+</ul>
+
+<p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
+
+<h2 id="-translations">🌐 Translations</h2>
+
+<ul>
+  <li>🇮🇩 <a href="https://github.com/rijdz/HEAD" rel="noopener noreferrer" target="_blank">Bahasa</a></li>
+  <li>🇧🇷 <a href="https://github.com/Webschool-io/HEAD" rel="noopener noreferrer" target="_blank">Brazilian Portuguese</a></li>
+  <li>🇨🇳 <a href="https://github.com/Amery2010/HEAD" rel="noopener noreferrer" target="_blank">Chinese (Simplified)</a></li>
+  <li>🇩🇪 <a href="https://github.com/Shidigital/HEAD" rel="noopener noreferrer" target="_blank">German</a></li>
+  <li>🇮🇹 <a href="https://github.com/Fakkio/HEAD" rel="noopener noreferrer" target="_blank">Italian</a></li>
+  <li>🇯🇵 <a href="https://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html" rel="noopener noreferrer" target="_blank">Japanese</a></li>
+  <li>🇰🇷 <a href="https://github.com/Lutece/HEAD" rel="noopener noreferrer" target="_blank">Korean</a></li>
+  <li>🇷🇺 <a href="https://github.com/Konfuze/HEAD" rel="noopener noreferrer" target="_blank">Russian/Русский</a></li>
+  <li>🇪🇸 <a href="https://github.com/alvaroadlf/HEAD" rel="noopener noreferrer" target="_blank">Spanish</a></li>
+  <li>🇹🇷 <a href="https://github.com/mkg0/HEAD" rel="noopener noreferrer" target="_blank">Turkish/Türkçe</a></li>
+</ul>
+
+<p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
+
+<h2 id="-contributing">🤝 Contributing</h2>
+
+<p><strong>Open an issue or a pull request to suggest changes or additions.</strong></p>
+
+<h3 id="guide">Guide</h3>
+
+<p>The <strong>HEAD</strong> repository consists of two branches:</p>
+
+<h4 id="1-master">1. <code class="language-plaintext highlighter-rouge">master</code></h4>
+
+<p>This branch consists of the <code class="language-plaintext highlighter-rouge">README.md</code> file that is reflected on the <a href="https://htmlhead.dev/">htmlhead.dev</a> website. All changes to the content of the guide should be made in this file.</p>
+
+<p>Please follow these steps for pull requests:</p>
+
+<ul class="list-style-default">
+  <li>Modify only one tag, or one related set of tags at a time</li>
+  <li>Use double quotes on attributes</li>
+  <li>Don’t include a trailing slash in self-closing elements — the HTML5 spec says they’re optional</li>
+  <li>Consider including a link to documentation that supports your change</li>
+</ul>
+
+<h4 id="2-gh-pages">2. <code class="language-plaintext highlighter-rouge">gh-pages</code></h4>
+
+<p>This branch is responsible for the <a href="https://htmlhead.dev/">htmlhead.dev</a> website. We use <a href="https://jekyllrb.com/" rel="noopener noreferrer" target="_blank">Jekyll</a> to deploy the <code class="language-plaintext highlighter-rouge">README.md</code> markdown file to <a href="https://pages.github.com/" rel="noopener noreferrer" target="_blank">GitHub Pages</a>. All website related modifications should be made in this branch.</p>
+
+<p>You may find it helpful to review the <a href="https://jekyllrb.com/docs/home/" rel="noopener noreferrer" target="_blank">Jekyll Docs</a> and understand how Jekyll works before working in this branch.</p>
+
+<h2 id="-contributors">🌟 Contributors</h2>
+
+<p>Check out all the super awesome <a href="https://github.com/joshbuchea/HEAD/graphs/contributors" rel="noopener noreferrer" target="_blank">contributors</a> 🤩</p>
+
+<h2 id="-author">👤 Author</h2>
+
+<p><strong>Josh Buchea</strong></p>
+
+<ul>
+  <li>GitHub: <a href="https://github.com/joshbuchea" rel="noopener noreferrer" target="_blank">@joshbuchea</a></li>
+  <li>Twitter: <a href="https://twitter.com/joshbuchea" rel="noopener noreferrer" target="_blank">@joshbuchea</a></li>
+</ul>
+
+<h2 id="-support">💛 Support</h2>
+
+<p>If this project was helpful for you or your organization, please considering supporting my work directly:</p>
+
+<ul>
+  <li>💛 <a href="https://github.com/sponsors/joshbuchea" rel="noopener noreferrer" target="_blank">Sponsor me on GitHub</a></li>
+  <li>⭐️ <a href="https://github.com/joshbuchea/HEAD" rel="noopener noreferrer" target="_blank">Star this project on GitHub</a></li>
+  <li>🐙 <a href="https://github.com/joshbuchea" rel="noopener noreferrer" target="_blank">Follow me on GitHub</a></li>
+  <li>🐦 <a href="https://twitter.com/joshbuchea" rel="noopener noreferrer" target="_blank">Follow me on Twitter</a></li>
+</ul>
+
+<p>Everything helps, thanks! 🙏</p>
+
+<p>— Josh</p>
+
+<h2 id="-license">📝 License</h2>
+
+<p><a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener noreferrer" target="_blank"><img src="https://i.creativecommons.org/p/zero/1.0/88x31.png" alt="CC0"></a></p>
+
+<p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
+
+
+      </div>
+    </div>
+
+    <script>
+      // open external links in new tab
+      var links = document.links;
+      var linksLength = links.length;
+      var i;
+
+      for (i = 0; i < linksLength; i++) {
+        if (links[i].hostname != window.location.hostname) {
+          links[i].rel = 'noopener noreferrer';
+          links[i].target = '_blank';
+        }
+      }
+    </script>
+    
+	<!-- Google Analytics -->
+	<script>
+	  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+	  ga('create','UA-79520097-1','auto');ga('send','pageview')
+	</script>
+	<script src="https://www.google-analytics.com/analytics.js" async="" defer=""></script>
+	<!-- End Google Analytics -->
+
+  
+
 </body>
 </html>
