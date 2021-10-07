@@ -24,33 +24,33 @@ h1 {
   color: #aaa;
   padding: 0 10px;
   margin: 0;
-  font-size: 18pt;
+  font-size: 20pt;
 }
 
 h2 {
   color: #434e6a;
-  font-size: 16pt;
+  font-size: 18pt;
   margin: 14pt 0 4pt;
 }
 
 h3 {
   margin-top: 5pt;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 h4 {
   font-family: 'Adobe Caslon Pro';
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   margin: 8pt 0 4pt;
 }
 
 pre, code {
-  font-size: 12px;
+  font-size: 14px;
 }
 li, p {
-  font-size: 13px;
+  font-size: 15px;
 }
 p, pre {
   margin: 0.5em 0;
