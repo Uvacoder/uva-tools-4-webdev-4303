@@ -27,7 +27,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/darekkay/dev-tools.git"
+    "url": "https://github.com/uvacoder/abc-devtools.git"
   },
   "scripts": {
     "build": "gulp build",
