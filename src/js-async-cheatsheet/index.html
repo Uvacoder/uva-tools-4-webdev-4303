@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!doctype>
 <html>
 <head>
   <link type="text/css" rel="stylesheet" href="stylesheet.css">
@@ -66,7 +66,7 @@
 </section>
 
 <section>
-<p>If <em>any</em> promise is rejected, the error will be passed through.</p>
+// <p>If <em>any</em> promise is rejected, the error will be passed through.</p>
 <div class="combine">
 <pre><code>Promise.<strong>all</strong>([
   <span class="pending promise"><span class="bounce1"></span><span class="bounce2"></span><span class="bounce3"></span></span>,
@@ -124,7 +124,7 @@
     <span class="promise fulfilled">value</span>.<strong>then</strong>(<span class="function"><span class="value">value</span> => throw <span class="error">error</span></span>, <span class="optional function">...</span>) -> <span class="promise rejected">error</span>
   </code>
 
-  <p>Calls <code>onRejected</code> if the promise is rejected.</p>
+  // <p>Calls <code>onRejected</code> if the promise is rejected.</p>
 
   <code>
     <span class="promise rejected">error</span>.<strong>then</strong>(<span class="optional function">...</span>, <span class="function"><span class="error">error</span> => <span class="value">value</span></span>) -> <span class="promise fulfilled">value</span>
