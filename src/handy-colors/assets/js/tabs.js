@@ -1,11 +1,11 @@
 // import { ITabs } from './interfaces';
 
 export default class Tabs {
-  _mainElem: HTMLElement;
+  _element: HTMLElement;
   _items: Record<string, HTMLElement>;
 
   constructor ({ mainElem }) {
-    this._mainElem = mainElem;
+    this._element = mainElem;
     this._items = this._getNavItems();
   }
 
