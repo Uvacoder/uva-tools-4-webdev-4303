@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Flex Cheatsheet</title>
+    <meta name="description"
+      content="Demos for W3C CSS Flexbox Specification http://www.w3.org/TR/css-flexbox-1/">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta property="og:title" content="Flex Cheatsheet">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://uvacoder.github.io/test-flex-cheatsheet/">
+    <meta property="og:image" content="//uvacoder.github.io/test-flex-cheatsheet/screenshot.png">
+    <meta property="og:description"
+      content="Demos for W3C CSS Flexbox Specification http://www.w3.org/TR/css-flexbox-1/">
+  <link href="/test-flex-cheatsheet/styles.css" rel="stylesheet"></head>
+
+  <body class="page" data-theme="sunny">
+    <h1 class="visually-hidden">Flex Cheatsheet</h1>
+
+    <div class="page-container">
+      <main class="page-main"></main>
+
+      <aside class="page-aside page-aside--collapsed">
+        <button type="button" class="page-aside__toggler">
+          <span class="visually-hidden">Toggle nav</span>
+        </button>
+
+        <div class="page-aside__content">
+          <div class="project-links">
+            <a href="https://github.com/uvacoder/test-flex-cheatsheet/" class="project-link project-link--git" title="Project on github">Project on github</a>
+            <a href="https://twitter.com/yoksel_en" class="project-link project-link--twitter" title="Twitter @yoksel_en">@yoksel_en</a>
+          </div>
+
+          <p
+            class="
+              page-aside__clarification
+              page-aside__container
+            ">All text content belongs to <a href="http://www.w3.org/TR/css-flexbox-1/">W3C CSS Flexbox Specification</a>,<br>I only added interactive demos</p>
+        </div>
+      </aside>
+    </div>
+
+    <button class="theme-control" type="button">Change theme</button>
+
+    <template id="demo-tmpl">
+      <div class="demo notranslate">
+        <div class="demo__content">
+          <div class="demo__view">
+            <div class="parent">
+              <div class="child"></div>
+              <div class="child"></div>
+              <div class="child child--featured"></div>
+              <div class="child"></div>
+            </div>
+          </div>
+
+          <div class="demo__code" spellcheck="false"></div>
+        </div>
+      </div>
+    </template>
+
+    <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(65071600, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/65071600" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  <script type="text/javascript" src="/test-flex-cheatsheet/bundle.js"></script></body>
+</html>
